@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html>
-<head><meta charset="utf-8">
+
+<head>
 
 <title>Taniya Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
 <style>
 
 body {
 
+font-family: Poppins;
 background: linear-gradient(to right, #ffd6e0, #e7c6ff);
-font-family: Arial;
-text-align: center;
+margin: 0;
 
 }
 
-h1 {
+.container {
 
-color: #ff69b4;
+padding: 40px;
+
+text-align: center;
 
 }
 
@@ -26,9 +31,41 @@ background: white;
 
 padding: 20px;
 
-margin: 20px;
+margin: 20px auto;
 
 border-radius: 20px;
+
+width: 80%;
+
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+}
+
+h1 {
+
+color: #ff4d8d;
+
+}
+
+button {
+
+background: #ff4d8d;
+
+color: white;
+
+border: none;
+
+padding: 10px 20px;
+
+border-radius: 10px;
+
+cursor: pointer;
+
+}
+
+button:hover {
+
+background: #e6005c;
 
 }
 
@@ -38,35 +75,33 @@ border-radius: 20px;
 
 <body>
 
+<div class="container">
+
 <h1>Hi, I'm Taniya 💖</h1>
 
 <p>Aspiring Software Engineer</p>
 
 <div class="card">
 
-<h2>About Me</h2>
+<h2>About Me 🌸</h2>
 
-<p>MTech CSE student learning coding</p>
+<p>
 
-</div>
+MTech CSE student passionate about coding and growth.
 
-<div class="card">
-
-<h2>My Projects</h2>
-
-<p>Coming soon...</p>
+</p>
 
 </div>
 
 <div class="card">
 
-<h2>Skills</h2>
+<h2>Skills ✨</h2>
 
 <p>
 
 Python<br>
-CSS<br>
-HTML (learning)
+C++<br>
+HTML<br>
 
 </p>
 
@@ -74,16 +109,35 @@ HTML (learning)
 
 <div class="card">
 
-<h2>Contact</h2>
+<h2>Projects 💻</h2>
 
 <p>
 
-Email: taniyamahwish123@email.com
+Portfolio Website (this one!)
 
 </p>
 
 </div>
 
+<div class="card">
+
+<h2>Contact 📧</h2>
+
+<p>
+
+taniyamahwish123@email.com
+
+</p>
+
+</div>
+
+<button onclick="alert('Thank you for visiting my portfolio 💖')">
+
+Click Me
+
+</button>
+
+</div>
 
 </body>
 
