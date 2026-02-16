@@ -9,6 +9,70 @@
 
 <style>
 
+.typing {
+
+overflow: hidden;
+white-space: nowrap;
+border-right: 3px solid #ff4d8d;
+width: 0;
+animation: typing 3s steps(30, end) forwards, blink 1s infinite;
+
+}
+
+@keyframes typing {
+
+from { width: 0 }
+to { width: 100% }
+
+}
+
+@keyframes blink {
+
+50% { border-color: transparent }
+
+}
+
+.float {
+
+animation: float 3s ease-in-out infinite;
+
+}
+
+@keyframes float {
+
+0% { transform: translateY(0px); }
+
+50% { transform: translateY(-15px); }
+
+100% { transform: translateY(0px); }
+
+}
+
+.container {
+
+animation: fadeIn 1.5s;
+
+}
+
+@keyframes fadeIn {
+
+from {
+
+opacity: 0;
+transform: translateY(20px);
+
+}
+
+to {
+
+opacity: 1;
+transform: translateY(0);
+
+}
+
+}
+
+
 body {
 
 font-family: Poppins;
@@ -26,6 +90,16 @@ text-align: center;
 }
 
 .card {
+
+transition: 0.3s;
+
+.card:hover {
+
+transform: scale(1.05);
+box-shadow: 0 0 20px pink;
+
+}
+
 
 background: white;
 
@@ -75,11 +149,19 @@ background: #e6005c;
 
 <body>
 
+<div style="position:fixed; top:10px; left:10px;">✨</div>
+<div style="position:fixed; top:100px; right:20px;">🌸</div>
+<div style="position:fixed; bottom:50px; left:30px;">💖</div>
+
+
 <div class="container">
 
+<img src="avatar.png" width="150" style="border-radius: 50%;" class="float">
+    
 <h1>Hi, I'm Taniya 💖</h1>
 
-<p>Aspiring Software Engineer</p>
+<p class="typing">Future Software Engineer ✨</p>
+
 
 <div class="card">
 
@@ -97,27 +179,49 @@ MTech CSE student passionate about coding and growth.
 
 <h2>Skills ✨</h2>
 
-<p>
+<p>Python</p>
 
-Python<br>
-C++<br>
-HTML<br>
+<div style="background:#eee;border-radius:10px;">
+<div style="width:70%;background:#ff4d8d;padding:5px;border-radius:10px;color:white;">
+70%
+</div>
+</div>
 
-</p>
+<p>C++</p>
+
+<div style="background:#eee;border-radius:10px;">
+<div style="width:60%;background:#ff4d8d;padding:5px;border-radius:10px;color:white;">
+60%
+</div>
+</div>
+
+<p>HTML</p>
+
+<div style="background:#eee;border-radius:10px;">
+<div style="width:80%;background:#ff4d8d;padding:5px;border-radius:10px;color:white;">
+80%
+</div>
+</div>
 
 </div>
+
 
 <div class="card">
 
 <h2>Projects 💻</h2>
 
+<img src="project1.png" width="200" style="border-radius:10px;">
+
+<h3>Portfolio Website</h3>
+
 <p>
 
-Portfolio Website (this one!)
+My personal portfolio made using HTML & CSS
 
 </p>
 
 </div>
+
 
 <div class="card">
 
@@ -130,6 +234,19 @@ taniyamahwish123@email.com
 </p>
 
 </div>
+
+<div class="card">
+
+<h2>Resume 📄</h2>
+
+<a href="resume.pdf" download>
+
+<button>Download Resume</button>
+
+</a>
+
+</div>
+
 
 <button onclick="alert('Thank you for visiting my portfolio 💖')">
 
